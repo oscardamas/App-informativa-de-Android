@@ -43,7 +43,7 @@ public class ActivityOne extends AppCompatActivity implements View.OnClickListen
                 startActivity(vcontacto);
                 break;
             case R.id.button:
-                Intent vnoticias = new Intent(this, ActivityNoticias.class);
+                Intent vnoticias = new Intent(this, ActivityConvocatorias.class);
                 startActivity(vnoticias);
 
 
