@@ -12,6 +12,7 @@ public class ActivityOne extends AppCompatActivity implements View.OnClickListen
     Button bnoticias;
     Button bcontacto;
     Button bacercade;
+    Button noticias;
 
     ImageView logo;
     @Override
@@ -28,6 +29,11 @@ public class ActivityOne extends AppCompatActivity implements View.OnClickListen
 
         bnoticias = (Button) findViewById(R.id.button);
         bnoticias.setOnClickListener(this);
+
+        noticias = (Button) findViewById(R.id.button2);
+        noticias.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -38,6 +44,10 @@ public class ActivityOne extends AppCompatActivity implements View.OnClickListen
                 Intent vacerca = new Intent(this, ActivityAcercaDe.class);
                 startActivity(vacerca);
                 break;
+            case R.id.button2:
+                Intent vnoticia = new Intent(this, ActivityNoticias.class);
+                startActivity(vnoticia);
+                break;
             case R.id.button4:
                 Intent vcontacto = new Intent(this, ActivityContacto.class);
                 startActivity(vcontacto);
@@ -45,6 +55,8 @@ public class ActivityOne extends AppCompatActivity implements View.OnClickListen
             case R.id.button:
                 Intent vnoticias = new Intent(this, ActivityConvocatorias.class);
                 startActivity(vnoticias);
+                break;
+
 
 
         }
